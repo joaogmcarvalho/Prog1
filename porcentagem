@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+    float c1, c2, total;
+    
+    printf("\nEntre com os votos do candidato1:");
+    scanf("%f", &c1);
+    
+    printf("\nEntre com os votos do candidato2:");
+    scanf("%f", &c2);
+    
+    total=c1+c2;
+    
+    printf("\nPercentual de votos do candidato1: %.2f", c1/total*100);
+    printf("\nPercentual de votos do candidato2: %.2f", c2/total*100);
+    
+    if(c1>c2)
+    printf("\nCandidato 1 venceu as eleiçoes com %.2f%%", c1/total*100);
+    
+    else if(c2>c1)
+    printf("\nCandidato 2 venceu as eleiçoes com %.2f%%", c2/total*100);
+    
+    else
+    printf("\nEleiçoes Empatadas!");
+    
+    system("pause");
+    return 0;
+}
