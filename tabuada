@@ -1,0 +1,16 @@
+int main()
+{
+    int n, i;
+    
+    printf("\nEntre com um numero:");
+    scanf("%d", &n);
+    
+    printf("\nTabuada de %d", n);
+    
+    for(i=1;i<=10;i++)
+    printf("\n%d x %d = %d", n,i,n*i);
+    
+    system("pause");
+    return 0;
+    
+}
