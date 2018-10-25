@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+	int x, tam;
+	char nome[30];
+	
+	printf("\nEntre com o nome:");
+	//scanf("%s", nome);
+	gets(nome);
+	
+	        tam=strlen(nome);
+	        
+	        printf("\nO nome digitado foi: ");
+	        
+	        for(x=(tam-1); x>=0; x--)
+			{
+	        	printf("%c", nome[x]);
+	        	
+			}
+	
+	printf("\n\n");
+	
+	for(x=0;x<=tam-1;x++)
+	{
+		if((nome[x>=65])&&(nome[x]<=90))
+		{
+			printf("%c",nome[x]);
+		}
+		
+	
+	
+	else
+	{
+		printf("%c", nome[x]-32);
+	}
+}
+	system("pause");
+	return 0;
+}
