@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+	int matA[3][3];
+	int i, j;
+	
+	//popular os elementos da matriz
+	for(i=0;i<3;i++){
+		for(j=0;j<3;j++)
+		{
+			printf("\nEntre com o numero [%d, %d]:", i+1,j+1);
+			scanf("%d", &matA[i][j]);
+		}
+	}
+	
+	//imprimir a matriz
+	for(i=0;i<3;i++)
+	{
+		printf("\n|");
+		for(j=0;j<3;j++)
+		
+		{
+			printf("%d", matA[i][j]);
+		}
+		printf(" |");
+	}
+	
+	for(i=0;i<3;i++){
+		printf("\n| %d |",matA[i][1]);
+	}
+	
+	system("pause");
+	return 0;
+}
